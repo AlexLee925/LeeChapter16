@@ -1,0 +1,21 @@
+---
+title: "PackageLoad"
+output: html_document
+date: "2023-11-30"
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+```
+
+
+```{r}
+library(LeeChapter16)
+```
+
+```{r}
+ggplot(Flagstaff_Weather, aes(x=DATE, y=TMAX)) + geom_line()
+ggplot(Flagstaff_Weather, aes(x=DATE, y=SNOW)) + geom_line()
+ggplot(Flagstaff_Weather, aes(x=prcp, y=SNOW)) + geom_line()
+```
+
